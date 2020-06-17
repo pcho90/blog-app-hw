@@ -1,0 +1,35 @@
+.create-page {
+  padding-top: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.create-form {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 50%;
+}
+
+.create-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.create-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.create-form button {
+  border: none;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: white;
+  padding: 10px;
+}

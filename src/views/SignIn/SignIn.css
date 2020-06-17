@@ -1,0 +1,38 @@
+.sign-in-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+  width: 40%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.sign-in-page button {
+  width: 100%;
+  margin: 20px auto;
+  padding: 0.7rem;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 5px;
+  border: none;
+}
+
+.sign-in-page input {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 10px;
+}
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  align-items: center;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  align-items: center;
+}

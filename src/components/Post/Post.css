@@ -1,0 +1,22 @@
+.post-body {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background: white;
+  margin: 30px 0;
+  padding: 10px 20px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+}
+
+.post-subtitle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.post-content {
+  padding: 20px 0;
+  width: 100%;
+  overflow-wrap: anywhere;
+}

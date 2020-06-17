@@ -1,0 +1,9 @@
+.layout {
+  width: 100%;
+}
+
+.layout-children {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+}

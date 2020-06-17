@@ -1,0 +1,25 @@
+.edit-body {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-body input {
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.edit-body input:focus {
+  outline: none;
+}
+
+.edit-body button {
+  width: 100%;
+}

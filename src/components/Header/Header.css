@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  height: 60px;
+  background: dodgerblue;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.nav-logo {
+  margin-left: 60px;
+}
+
+.nav-links {
+  margin-right: 60px;
+}
+
+.nav-links a {
+  margin: 0 10px;
+}
