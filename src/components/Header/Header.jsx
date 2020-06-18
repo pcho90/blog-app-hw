@@ -14,7 +14,12 @@ const Nav = () => {
         <NavLink to='/create'>Add Post</NavLink>
         <NavLink to='/profile'>My Profile</NavLink>
         <NavLink to='/' onClick={() => toggleSignIn(null)}>
-          Sign Out
+          <div className='sign-out'>
+            <span>Sign Out</span>
+            <span className='login-subtitle'>
+              Signed in as {currentUser.username}
+            </span>
+          </div>
         </NavLink>
       </>
     );

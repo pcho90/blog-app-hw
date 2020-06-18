@@ -67,7 +67,7 @@ const PostDetail = () => {
               <span className='original-title'>{title}</span>
               <div className='original-subtitle'>
                 <span className='original-author'>{author}</span>
-                <span>{time}</span>
+                <span>{time.slice(0, 10)}</span>
               </div>
               <span className='original-content'>{content}</span>
               {currentUser && currentUser.username === post.author && (

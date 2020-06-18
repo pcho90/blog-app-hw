@@ -1,19 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Loader from 'react-loader-spinner';
 
 import './Homepage.css';
+import { AuthContext } from '../../contexts/auth';
 import { getPosts } from '../../services/posts';
+import { signInUser } from '../../services/users';
 import Layout from '../../components/Layout/Layout';
 import Post from '../../components/Post/Post';
 
 const Homepage = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const { toggleSignIn } = useContext(AuthContext);
+
   useEffect(() => {
     const fetchData = async () => {
       const response = await getPosts();
       setPosts(response);
       setLoading(false);
+
+      const token = JSON.parse(localStorage.getItem('jwt-token'));
+
+      if (token) {
+        const user = await signInUser(null, token);
+        toggleSignIn(user);
+      }
     };
     fetchData();
   }, []);

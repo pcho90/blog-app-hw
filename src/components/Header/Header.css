@@ -18,9 +18,19 @@
 }
 
 .nav-links {
+  display: flex;
   margin-right: 60px;
 }
 
 .nav-links a {
   margin: 0 10px;
+}
+
+.sign-out {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-subtitle {
+  font-size: 0.8rem;
 }

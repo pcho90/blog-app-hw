@@ -16,7 +16,7 @@ const Post = ({ title, user, content, createdAt, _id, author }) => {
       </span>
       <div className='post-subtitle'>
         <div className='post-author'>{author}</div>
-        <span className='post-time'>{createdAt}</span>
+        <span className='post-time'>{createdAt.slice(0, 10)}</span>
       </div>
       <div className='post-content'>{content}</div>
     </div>

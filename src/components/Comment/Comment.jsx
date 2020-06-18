@@ -37,7 +37,7 @@ const Comment = ({
         <div className='content-main'>{content}</div>
         <div className='content-subtitle'>
           <span className='comment-author'>{author}</span>
-          <span>{createdAt}</span>
+          <span>{createdAt.slice(0, 10)}</span>
         </div>
         {currentUser && currentUser.username === author && (
           <button onClick={() => setEditMode(true)}>Edit</button>
@@ -55,7 +55,7 @@ const Comment = ({
           />
           <div className='content-subtitle'>
             <span className='comment-author'>{author}</span>
-            <span>{createdAt}</span>
+            <span>{createdAt.slice(0, 10)}</span>
           </div>
           <button>Save</button>
         </div>
